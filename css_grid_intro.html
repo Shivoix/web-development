@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Grid Introduction</title>
+    <style>
+      .container {
+        display: grid; /*here we 1st inisiltize the display as grid*/
+        /* grid-template-columns: 300px 100px 100px;     to create 3 columns of size 1st-300px 2nd-100px 3rd-100px */
+        /* grid-template-columns: 300px auto 100px; */
+        /* grid-template-columns: 1fr 4fr 1fr;     fr is a unit */
+        grid-template-columns: repeat(9,auto);    /*syntax= grid-template-columns: repeat(no. of colums,width);*/
+        
+        
+      }
+      .item{
+          /* height: 100px; */
+          /* width: 100px; */
+          background-color: red;   
+          border: 2px solid black;
+          margin: 3px;
+      }
+    </style>
+  </head>
+  <body>
+     <div class="container">                                   <!--this is grid parent element      -->
+      <div class="item">this is a item-1</div>                 <!--this is grid child element      -->
+      <div class="item">this is a item-2</div>                 <!--this is grid child element      -->                  
+      <div class="item">this is a item-3</div>                 <!--this is grid child element      -->
+      <div class="item">this is a item-4</div>                 <!--this is grid child element      -->
+      <div class="item">this is a item-5</div>                 <!--this is grid child element      -->
+      <div class="item">this is a item-6</div>                 <!--this is grid child element      -->
+      <div class="item">this is a item-7</div>                 <!--this is grid child element      -->
+      <div class="item">this is a item-8</div>                 <!--this is grid child element      -->
+      <div class="item">this is a item-9</div>                 <!--this is grid child element      -->
+    </div>
+  </body>
+</html>
