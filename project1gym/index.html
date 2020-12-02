@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shiv Fitness</title>
+</head>
+<link href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<style>
+    /* CSS RESET  */
+    body {
+        padding: 0px;
+        margin: 0px;
+        background-image: url(img/damir-spanic-Cs73R4ZO50E-unsplash.jpg);
+        width: initial;
+        background-size: cover;
+        font-family: 'Baloo Bhai 2', cursive;
+    }
+
+    .left {
+        position: absolute;
+        left: 27px;
+        top: 23px;
+        display: inline-block;
+        color: white;
+        text-align: center;
+        line-height: 18px;
+        font-size: 11px;
+        cursor: pointer;
+    }
+
+    .left:hover {
+        background-color: grey;
+    }
+
+    .left img {
+        width: 73px;
+        filter: invert(100%);
+    }
+
+    .mid {
+        display: block;
+        width: 50%;
+        margin: 35px auto;
+        color: white;
+    }
+
+    .right {
+        position: absolute;
+        right: 30px;
+        top: 45px;
+        display: inline-block;
+        color: white;
+    }
+
+    .navbar {
+        display: inline-block;
+    }
+
+    .navbar li {
+        display: inline-block;
+    }
+
+    .navbar li a {
+        color: white;
+        text-decoration: none;
+        /*to remove the underline from the links.*/
+        padding: 34px 20px;
+        font-size: 15px;
+    }
+
+    .navbar li a:hover {
+        text-decoration: underline;
+        color: grey;
+    }
+
+    .btn {
+        font-family: 'Baloo Bhai 2', cursive;
+        margin: 0px 10px;
+        color: white;
+        background-color: black;
+        padding: 2px 14px;
+        border-radius: 9px;
+        font-size: 13px;
+        cursor: pointer;
+
+    }
+
+    .btn:hover {
+        background-color: darkslateblue;
+    }
+
+    .container {
+        border: 3px solid white;
+        margin: 74px 25px;
+        padding: 20px 64px;
+        width: 32%;
+        border-radius: 30px;
+        color: white;
+    }
+
+    .container button {
+        width: 23%;
+        margin: auto;
+        display: block;
+    }
+
+    #forheading {
+        background-color: #6117176e;
+        width: 115%;
+        text-align: center;
+    }
+
+    .from-group input {
+        margin: 7px auto;
+        text-align: left;
+        width: 202px;
+        padding: 8px;
+        border-radius: 13px;
+        border: 2px solid #6117176e;
+    }
+
+    .content {
+        border: 2px solid white;
+        margin: -359px 885px;
+        padding: 3px 2px;
+        border-radius: 31px;
+        width: 31%;
+        color: white;
+    }
+    .content p{
+        padding: 14px;
+    }
+    .content h3{
+        text-align: center;
+        background-color: #6117176e;
+        width: 100%
+    }
+</style>
+
+<body>
+    <header class="header">
+        <!-- left box for logo -->
+        <div class="left">
+            <img src="img/kisspng-logo-physical-fitness-fitness-centre-gym-5ac8cacc6a0366.8946320415231085564342.jpg"
+                alt="Sorry! Check your netwrok connection.">
+            <div>SHIVOIX <br>FITNESS</div>
+        </div>
+        <!-- mid box for navigation bar -->
+        <div class="mid">
+            <ul class="navbar">
+                <li>
+                    <a href="#"><strong>HOME</strong></a>
+                </li>
+                <li>
+                    <a href="#"><strong>ABOUT US</strong></a>
+                </li>
+                <li>
+                    <a href="#"><strong>FITNESS CALCULATOR</strong></a>
+                </li>
+                <li>
+                    <a href="#"><strong>CONTACT US</strong></a>
+                </li>
+            </ul>
+        </div>
+        <!-- right box for buttons -->
+        <div class="right">
+            <button class="btn">JOIN NOW</button>
+        </div>
+    </header>
+    <div class="container">
+        <h3 id="forheading">JOIN US NOW....</h3>
+        <form action="noactionnow.php">
+            <div class="from-group">
+                <label for="name"></label>
+                <input type="text" name="nameaction" id="name" placeholder="Enter your name">
+            </div>
+            <div class="from-group">
+                <label for="email"></label>
+                <input type="email" name="emailaction" id="email" placeholder="Enter your email">
+            </div>
+            <div class="from-group" <label for="number"></label>
+                <input type="text" name="nameaction" id="number" placeholder="Enter your number">
+            </div>
+            <button class="btn">SUBMIT</button>
+        </form>
+    </div>
+    <div class="content">
+        <h3>ABOUT US...</h3>
+        <p>Unfortunately, finding the time to work out or to learn a new exercise regimen can be challenging. In fact, a
+            research done by Bodybuilding.com revealed that almost 75% of people who set keeping fit as their New Year’s
+            resolution tend to quit before they see results.</p>
+
+        <p>The main reason people cannot follow through and accomplish their resolutions is that they become discouraged
+            because they’re doing it alone. They lack the support network necessary to achieve this important goal.</p>
+
+        <p>In any undertaking, especially a new one, doing it with someone can increase the chance of success.</p>
+
+        <p>Get a buddy to go to the gym with you or convince a friend to start a new weight-loss program with you. And
+            remember that we are here for you.</p>
+    </div>
+</body>
+
+</html>

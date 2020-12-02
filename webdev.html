@@ -1,0 +1,154 @@
+<!--its my html file during learning the web development.-->
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- this are some meta tags  -->
+    <meta charsets="UTF-8">
+    <meta name="viewport" content="width=device-width, inital-scale=1.0">
+    <meta name="description" content="This is discription.">
+    <meta name="keywords" content="shivoix, shiv sharma, shivam vashisth">
+    <meta name="robot" content="FOLLOW, INDEX">
+    <!-- here it is the title for my website  -->
+    <title>My Website </title>
+    <!-- this how added external css file to my website  -->
+    <link rel="stylesheet" href="webdev1.css">
+    <!-- this is how i add external javascript  -->
+    <script src="webdev2.js"></script>
+</head>
+
+<body>
+    <!-- we can use upto h6  headings.  -->
+    <h1>WELCOME</h1>
+    <!-- here <p></p> are paragraph tags, <strong></strong> are for bolding text and <em></em> to italic the text.  -->
+    <p>This is my <em><strong>WEBSITE</strong></em></p>
+    <!-- use <br> tag to change the line or break the line.  -->
+    <br>this is new line
+    <!-- hr tag is used to make a horizontal line  -->
+    <hr>
+    <!-- now we add some external links to our websites  -->
+    <a href="http://google.com" target="_blank">Click Here for Google</a><br>
+    <a href="http://facebook.com" target="_blank">Click Here for Facebook</a><br>
+    <!-- now i'm adding some internal links -->
+    <a href="/img_anchor_tag.html" target="_blank">Click here to eneter our website.</a><br>
+    <!-- now i'm adding a image to this website from another website. just put the address of image from the another website and alt is used to write a comment if there will be a problem in downloading the image -->
+    <img src="https://source.unsplash.com/random" alt="SOORY!! Can't download the image."><br>
+    <img src="goku.jpg" alt="SOORY!! Can't download the image"><br>
+    <!-- now i'm adding two list 1st unordered and 2nd ordered -->
+    <!-- unordered list -->
+    <ul type="square">
+        <!-- type will be of any type like - circle, disc  -->
+        <li>First item</li>
+        <li>Second item</li>
+        <li>third item</li>
+    </ul>
+    <!-- ordered list -->
+    <ol type="I">
+        <!-- type will be of any type like - A,I,a,i,1 -->
+        <li>first item</li>
+        <li>second item</li>
+        <li>third item</li>
+    </ol>
+    <!-- we can make nested list also i.e. adding a list in another list -->
+    <ol type="1">
+        <li>list 1st and item is 1st</li>
+        <li>list 1st and item is 2nd</li>
+        <li>list 1st and item is 3rd</li>
+        <li>
+            <ul>
+                <li>list 2nd and item is 1st</li>
+                <li>list 2nd and item is 2nd</li>
+                <li>list 2nd and item is 3rd</li>
+            </ul>
+        </li>
+    </ol>
+    <!-- now i'm creating a table, table consist of head and body  -->
+    <h2>HTML TABLE</h2>
+    <TABLE>
+        <!-- thead is head of table and tr is row of head in table and th is content of row -->
+        <thead>
+            <tr>
+                <th>NAME</th>
+                <th>EMPLOYEE NO.</th>
+                <th>WORK</th>
+            </tr>
+        </thead>
+        <!-- tbody is body of table and tr is row of body in table and td is content of row -->
+        <tbody>
+            <tr>
+                <td>Shivam</td>
+                <td>4588</td>
+                <td>programmer</td>
+            <tr>
+                <td>Himanshu</td>
+                <td>852332</td>
+                <td>HTML expert</td>
+            </tr>
+            </tr>
+        </tbody>
+    </TABLE><br>
+    <!-- now i'm adding form in this website  -->
+    <h2>Form Appliciation</h2>
+    <!-- use form tag to creat a form in website, here "data.php" is just a backend place in web server where all this data of form will store-->
+    <form action="data.php">
+        <!-- "<div></div>" is used to change the line as a <br> tag -->
+        <!-- by input tag we can take any input from user as shown below -->
+        <!-- here name="....." is a attribute which is commonaly a name or place in beckend web server which stores data in beckend web server by the given name like "emaildata"  -->
+
+        <label for="name">NAME:</label>
+        <div>
+            <input type="text" name="namedata" id="name">
+        </div>
+        <br>
+        <!-- here label tag is used to direct select the input area by clicking on it. -->
+        <!-- i used label tag here only in two places i.e. name and email for a example -->
+        <!-- in label tag for="..." and id="..." are always be same as it connects the both line -->
+        <label for="email">EMAIL</label>
+        <div>
+            <input type="email" name="emaildata" id="email">
+
+        </div>
+        <br>
+        <div>
+            PASSWORD: <input type="password" name="passworddata">
+        </div>
+        <br>
+        <div>
+            GENDER: MALE <input type="radio" name="genderdata"> FEMALE <input type="radio" name="genderdata"> OTHER
+            <input type="radio" name="genderdata">
+        </div>
+        <br>
+        <div>
+            AGE: <input type="number" name="agedata">
+        </div>
+        <br>
+        <div>
+            Are you eligible?: <input type="checkbox" name="eligibleddata">
+        </div>
+        <div>
+            Givew your feedback:<br><textarea name="mytext" cols="30" rows="10"> </textarea>
+        </div>
+        <br>
+        <!-- here i used select tag to select from different option as shown below by use of label tag -->
+        <div>
+            <label for="car">CAR</label>
+            <select name="CARdata" id="car">
+                <option value="AUDI">AUDI</option>
+                <option value="MARUTI">MAAARuti</option>
+            </select>
+        </div>
+        <br>
+        <div>
+            SUBMIT: <input type="submit" name="Submit now">
+        </div>
+        <br>
+        <div>
+            RESET: <input type="reset" name="resetdata">
+        </div>
+        <br>
+    </form>
+
+
+</body>
+
+</html>

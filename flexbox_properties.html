@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox and some its properties</title>
+    <style>
+        .container {
+            border: 2px solid black;
+            height: 566px;
+            width: 100%;
+            display: flex;
+            /* initialize the container as a flexbox.*/
+            /* flex properties of a flex container  */
+            flex-direction: column;
+            /* these all are differennt properties of flexbox */
+            /*flex-direction: row;*/
+            /*flex-direction: row-reverse;*/
+            /*flex-direction: column-reverse;*/
+            flex-wrap: nowrap;
+            /*it is used over wrap the elements*/
+            justify-content: center;
+            /*to make container in ceneter by flexbox properties.*/
+            justify-content: space-between;
+            /*to make space between the elements by flexbox properties.*/
+            /* there are properties like above examples we can use them in different ways as we need */
+            align-items: center;
+            /*to make elment in vertical center.*/
+
+
+        }
+
+        .item {
+            background-color: cadetblue;
+            width: 200px;
+            height: 200px;
+            border: 2px solid blue;
+            margin: 10px;
+            padding: 22px;
+        }
+
+        #item1 {
+            order: 97;
+            /*to send element at the end i.e. element having more order will be placed at end in the container.*/
+            flex-shrink: 3;
+            flex-basis: 320px;
+            /* when flex-direction is set to row, flex-basis will control width  */
+            /* when flex-direction is set to column, flex-basis will control height  */
+        }
+
+        #item2 {
+            order: 44;
+            flex-grow: 4;
+
+        }
+
+        #item3 {
+            order: 5;
+            /* flex: 2 2 344px; syntax used - flex: flexshrink  flexgrow  flexbasis */
+            align-self: flex-end  ss;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>FLEXBOX</h1>
+    <div class="container">
+        <div class="item" id="item1">First box</div>
+        <div class="item" id="item2">second box</div>
+        <div class="item" id="item3">third box</div>
+    </div>
+</body>
+
+</html>

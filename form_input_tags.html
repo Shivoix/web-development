@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form and input tags</title>
+</head>
+
+<body>
+    <!-- we make form by input tags -->
+
+    <h1>Form</h1>
+    <!-- use form tag to creat a form in website, here "data.php" is just a backend place in web server where all this data of form will store-->
+    <form action="data.php">
+        <!-- "<div></div>" is used to change the line as a <br> tag -->
+        <!-- by input tag we can take any input from user as shown below -->
+        <div>
+            Date: <input type="date" name="date"><br>
+        </div>
+        <br>
+        <div>
+            Name: <input type="text" name="myname"><br>
+        </div>
+        <br>
+         <!-- here label tag is used to direct select the input area by clicking on it. -->
+        <!-- i used label tag here only in email for a example -->
+        <!-- in label tag for="..." and id="..." are always be same as it connects the both line -->
+        <label for="email">EMAIL</label>
+        <div>
+            <input type="email" name="emaildata" id="email">
+        <div>
+            Password: <input type="password" name="mypassword"><br>
+        </div>
+        <br>
+        <div>
+            AGE: <input type="number" name="agedata">
+        </div>
+        <br>
+        
+        <div>
+            Are you eligible?: <input type="checkbox" name="mycheckbox"><br>
+        </div>
+        <br>
+        <div>
+            Gender: Male <input type="radio" name="mygender"> FeMale <input type="radio" name="mygender"><br>
+        </div>
+        <br>
+        <div>
+            <label for="car">CAR</label>
+            <select name="CARdata" id="car">
+                <option value="AUDI">AUDI</option>
+                <option value="MARUTI">MAAARuti</option>
+            </select>
+        </div>
+        <br>
+        <div>
+            Givew your feedback:<br><textarea name="mytext" cols="30" rows="10"> </textarea>
+        </div>
+        <br>
+        <div>
+            <input type="submit" value="Submit Now">
+        </div>
+        <br>
+        <div>
+            reset: <input type="reset" name="resetdata">
+        </div>
+        <br>
+        
+    </form>
+
+</body>
+
+</html>

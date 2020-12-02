@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Creating Transition in CSS</title>
+    <style>
+      #box {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: black;
+        color: white;
+        width: 200px;
+        height: 200px;
+        /* CSS transitions allows you to change property values smoothly, over a given duration. */
+        /* transition-property: background-color;  */
+        /*here we choosed the background-color as a property written in "hover box" */
+        /* to select all property of box in  hover for transition we use "all" */
+        transition-property: all;
+        transition-duration: 1s;
+        transition-timing-function: ease-out;
+        transition-delay: 0.1s;
+
+        /* transition short hand property in one line  */
+        /* syntax-  transition: property transition-duration transition-timing-function transition-delay; */
+        /*EXAMPle- transition: background-color 1s ease-out 1s ; */
+      }
+      #box:hover {
+        background-color: red;
+        height: 250px;
+        width: 250px;
+        border-radius: 30px;
+      }
+    </style>
+  </head>
+  <body>
+    <h3>This is CSS Transition</h3>
+    <div class="container">
+      <div id="box">this is my box</div>
+    </div>
+  </body>
+</html>

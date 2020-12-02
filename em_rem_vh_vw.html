@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>size units(em,rem,vh and vw)</title>
+    <style>
+        .container{
+            font-size: 10px;
+            border: 2px solid red;
+            height: 100vh; /*vh unit is used to cover the whole browser as height border*/
+            width: 100vw;  /*vw unit is used to cover the whole browser as width border*/
+
+        }
+        h2{
+            text-align: center;
+        }
+        #first{
+            font-size: 4em; /*this type of font size unit(em) will adjust there size according to element's parent*/
+        }
+#second{
+    font-size: 3rem;
+    padding: 4em;
+}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2 id="first">This is 1st heading.</h2>
+        <h2 id="second">This is 2nd heading.</h2>
+        <h2 id="third">This is 3rd heading.</h2>
+          
+    </div>
+</body>
+</html>

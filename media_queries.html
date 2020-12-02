@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Queries</title>
+    <style>
+.box{
+    font-size: 72px;
+    text-align: center;
+    background-color: red;
+    color: white;
+    display: none;
+    }
+    /* now we are using media queries of css */
+    @media (max-width:300px) /*in bracket"()"" this is condition, if condition is true than the statement will run.*/
+    {
+        #box-1{
+            display: block;  /*statement*/
+        }
+    }    
+    @media (max-width:500px) and (min-width:300px)   /*condition*/
+    {
+        #box-2{
+            display: block;                          /*statement*/     
+            background-color: slateblue;           /*statement*/
+        }
+    }    
+    @media (max-width:800px) and (min-width:500px)   /*condition*/
+    {
+        #box-3{
+            display: block;                          /*statement*/     
+            background-color: yellow;           /*statement*/
+        }
+    }    
+    @media (max-width:1000px) and (min-width:800px)   /*condition*/
+    {
+        #box-4{
+            display: block;                          /*statement*/     
+            background-color: cyan;           /*statement*/
+        }
+    }    
+    
+    </style>
+</head>
+<body>
+    <div class="box" id="box-1">iphone</div>
+    <div class="box" id="box-2">samsung</div>
+    <div class="box" id="box-3">mi</div>
+    <div class="box" id="box-4">one plus</div>
+</body>
+</html>

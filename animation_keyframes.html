@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creating animation & keyframes</title>
+    <style>
+        .container {
+            background-color: sandybrown;
+        }
+
+        .box {
+            background-color: salmon;
+            width: 250px;
+            height: 250px;
+            position: relative;
+
+            /* now we are creating animation  */
+            animation-name: anim1;   /*animation name*/
+            animation-duration: 2s;   /*animation duration*/
+            animation-iteration-count: infinite;   /*it shows that how many times this animation will run.*/
+            animation-fill-mode: alternate;
+            animation-timing-function: ease-out;   /*it makes animation fast in starting and at the end it becomes slow*/
+        }
+        .box2{
+            background-color: yellowgreen;
+            width: 250px;
+            height: 250px;
+            position: relative;
+
+            animation-name: anim2;   
+            animation-duration: 2s;   
+            animation-iteration-count: infinite;   
+            animation-fill-mode: alternate;
+            animation-timing-function: ease-out;  
+        }
+        /* here we are creating the keyfrmaes of  animation */
+        /* method-1  */
+        @keyframes anim1 {
+            from {
+                width: 200px;
+            }
+
+            to {
+                width: 1200px;
+            }
+        }
+        /* method-2  */
+        @keyframes anim2{
+            0%{
+                top: 0px;
+                left: 0px;
+            }
+            25%{
+                top: 250px;
+                left: 0px;
+
+            }
+            75%{
+                top: 250px;
+                left: 250px;
+
+            }
+            100%{
+                top: 0px;
+                left: 250px;
+
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box">
+            <p>this is a box.</p>
+        </div>
+        <div class="box2">
+            <p>this is a box.</p>
+        </div>
+    </div>
+</body>
+
+</html>

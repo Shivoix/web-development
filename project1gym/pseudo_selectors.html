@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Before and After Pseudo selectors</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Goldman&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Goldman:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: black;
+            color: white;
+            
+            height: 44vh;
+        }
+
+        section {
+            height: 344px;
+            display: flex;
+            flex-direction: column;
+            padding: 3px 34px;
+            margin: 24px 34px;
+            align-items: center;
+            /*to make elements in center*/
+            justify-content: center;
+            /*to make container in center vertically.*/
+            font-family: 'Goldman', cursive;
+        }
+
+        /* section:before{
+            content: "this is content"
+             } */
+        h2 {
+            font-size: 4em;
+        }
+
+        p {
+            text-align: center;
+            font-size: 23px;
+        }
+        header::before{
+            top: 0px;
+            background-image:url('https://source.unsplash.com/user/erondu');
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            content: "";
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            opacity: 0.3;
+
+        }
+
+        .navigation {
+            border: 2px solid white;
+            background-color: white;
+            border-radius: 43px;
+            color: black;
+            width: 98%;
+            font-size: 28px;
+            display: flex;
+            font-family: 'Goldman', cursive;
+
+        }
+
+        li {
+            list-style: none;
+            padding: 24px 34px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <ul class="navigation">
+                <li class="item">Home</li>
+                <li class="item">About US</li>
+                <li class="item">Services</li>
+                <li class="item">Contact us</li>
+            </ul>
+        </nav>
+
+    </header>
+    <section>
+        <h2>Welcome</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti ratione molestias facilis quam enim
+            neque, ad eos voluptate cum quasi veritatis repellat ipsa nam numquam, officiis laborum sit cumque
+            aliquam dolores iusto. Facere, magnam.</p>
+    </section>
+    <hr>
+</body>
+
+</html>

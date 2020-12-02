@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visibility And Z-index Properties</title>
+    <style>
+        .box{
+            width: 170px;
+            height: 170px;
+            border: 2px solid black;
+        }
+        #box1{
+            background-color: green;
+        }
+        #box2{
+            visibility: hidden; /*will hide the element but not its space.*/
+            background-color:red;
+        }
+        /* z-index only works for position: relative,absolute,sticky,fixed  and not for static.*/
+        #box3{
+            position: relative;
+            background-color: blue;
+            top: 34px;
+            z-index: 38; 
+            /* here the z-index is more than the box4 element so it will show uppr than box4 i.e. box3  overwrap box4.   */
+        }
+        #box4{
+            z-index: 28;
+            position: relative;
+            top: 14px;
+            background-color: yellow;
+        }
+    </style>
+</head>
+<body>
+    <div class="box" id="box1"></div>
+    <div class="box" id="box2"></div>
+    <div class="box" id="box3"></div>
+    <div class="box" id="box4"></div>
+</body>
+</html>

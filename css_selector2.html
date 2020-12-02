@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>More on Selectors</title>
+    <style>
+        h1 {
+            border: 2px solid red;
+            border-radius: 4px;
+            color: black;
+            font-weight: bold;
+            text-align: center;
+        }
+        div > p{               /*it will effect only to those p element who are directly comes under the div container. */
+            color: red;
+            font-weight: bold;
+        }
+
+        div + P{   /*it means that paragraph whose last sibling was div*/
+
+color: green;
+background-color: grey;
+font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <h1>Selectors part 2</h1>
+    <div class="container">
+        <div class="row">
+            <ul>
+                <li class="item">
+                    <p>this is paragrph under ul and li.</p>
+                </li>
+            </ul>
+            <p>A paragraph</p>     <!--this paragraph will take the properties of "div > p"  -->
+        </div>
+        <p>paragraph second.</p>     <!--this paragraph will take the properties of both "div > p" and "div + p" -->
+    </div>
+    <p>this is third paragraph.</p>   <!--this paragraph will take the properties of "div + p"  -->
+</body>
+
+</html>

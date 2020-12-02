@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attribute And nth child pseudo selector.</title>
+    <style>
+        .container {
+            display: block;
+            width: 344px;
+            margin: auto;
+        }
+
+        input {
+            display: block;
+        }
+
+        input[type='text'] {
+            /*here we used pseudo selector property to select a specific input tag of type "text" */
+            padding: 2px;
+            border: 2px solid red;
+        }
+
+        a[target='_blank'] {
+            /*here we used pseudo selector property to select a specific anchor(a) tag whose target is set as "_blank" */
+            border: 2px solid black;
+            color: red;
+        }
+
+        a[target='_self'] {
+            /*here we used pseudo selector property to select a specific anchor(a) tag whose target is set as "_self" */
+            border: 2px solid yellow;
+            color: violet;
+        }
+
+        li:nth-child(3) {
+            /*this will apply css for third child*/
+            color: royalblue;
+        }
+
+        li:nth-child(2n+0) {
+            /*this will apply css on every second no. of child in the list, the 2n+0 formula works here as n=0*/
+            color: red;
+        }
+
+        li:nth-child(3n+3) {
+            /*NOTE:- n=0 is always same.*/
+            color: rosybrown;
+        }
+
+        li:nth-child(odd) {
+            /*simply for selecting odd numbers, same goes for even no.*/
+            border: 2px solid blue;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1><a href="http://google.com" target="_blank">Go to Google</a></h1>
+        <!--  here,target = "_blank" is used to open link in new tab  -->
+        <h1><a href="http://Facebook.com" target="_self">Go to Facebook</a></h1>
+        <!--  here,target = "_self" is used to open link in the same tab  -->
+        <form action="" class="form-control">
+            <input type="text" placeholder="enter your name">
+            <input type="password" placeholder="enter your password">
+            <input type="submit">
+        </form>
+        <ul>
+            <li class="item" id="item4">item-1</li>
+            <li class="item" id="item4">item-2</li>
+            <li class="item" id="item4">item-3</li>
+            <li class="item" id="item4">item-4</li>
+            <li class="item" id="item4">item-5</li>
+            <li class="item" id="item6">item-6</li>
+            <li class="item" id="item7">item-7</li>
+            <li class="item" id="item8">item-8</li>
+            <li class="item" id="item9">item-9</li>
+            <li class="item" id="item10">item-10</li>
+        </ul>
+    </div>
+</body>
+
+</html>

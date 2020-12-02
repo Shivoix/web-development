@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box and Text Shadow.</title>
+    <style>
+        .container {
+            display: flex;
+        }
+
+        .card {
+            padding: 24px 34px;
+            /* border: 2px solid red; */
+            margin: 24px 32px;
+            background-color: seagreen;
+
+            /* syntax ---- box-shadow: offset-x offset-y blur-radius spread-radius color;   here blur-radius and spread-radius is not important i.e. we can use syntax without they too*/
+
+            /* box-shadow: 10px 13px 24px 12px green; example of box shadow for lower side */
+            box-shadow: -10px -13px 20px green;
+            /*example of box shadow but for upper side due to -ve sign*/
+        }
+
+        .card h2 {
+            text-shadow: 2px 1px 2px white;
+            /*here we used text-shadow and it has same syntax as box-shadow. */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="card" id="card-1">
+            <h2>card1</h2>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minima quibusdam obcaecati, quas dolorem eius
+                quam, fugiat numquam similique alias aut inventore laudantium facere dignissimos ducimus, nihil nam
+                temporibus nostrum voluptatem!</p>
+        </div>
+        <div class="card" id="card-2">
+            <h2> card2</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, illo laudantium libero vero
+                pariatur facere autem? Voluptates molestiae at est natus. Eos tenetur harum ut alias magnam fugit totam
+                ipsa similique repellat!</p>
+        </div>
+        <div class="card" id="card-3">
+            <h2> card3</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, illo laudantium libero vero
+                pariatur facere autem? Voluptates molestiae at est natus. Eos tenetur harum ut alias magnam fugit totam
+                ipsa similique repellat!</p>
+        </div>
+    </div>
+</body>
+
+</html>

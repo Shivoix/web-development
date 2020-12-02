@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Variables and its Custom Properties</title>
+    <style>
+      :root {
+        /*creating variable*/
+        --box-color: blue; /*variable for blue color.*/
+        --danger-color: red; /*variable for red color.*/
+        --maxw: 333px; /*variable for max. width*/
+      }
+
+      .container {
+        max-width: var(--maxw); /*using variable*/
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: auto;
+        background-color: var(--danger-color); /*using variable*/
+      }
+
+      .box {
+        width: 200px;
+        height: 300px;
+        background-color: var(--box-color); /*using variable*/
+        border: 2px solid var(--danger-color); /*using variable*/
+        box-shadow: 10px 8px 6px var(--box-color); /*using variable*/
+        margin: 2px 8px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Selectors(internal)</title>
+    <style>
+        h2{
+            border: 4px solid rgb(12, 6, 6);
+        }
+        /* it works for all paragraph because it it is element selector, we give properties to paragraph or any element  */
+        p {
+            color: rgb(252, 10, 10);
+        }
+
+        /* now we creat a class .blueelement .blackbg for class selectors and it works for multiple elements */
+        .blueelement {
+            color: blue;
+        }
+
+        .blackbg {
+            background-color: green;
+        }
+
+        /* similarly we creat same for id #yellowbg for id selectors but id is only for single element  */
+        #yellowbg {
+            
+            color: grey ;
+        }
+        /* here we use two elements footer and spam with same poperty it is call grouping selector */
+        footer, spam{
+            background-color: indianred;
+
+        }
+    </style>
+</head>
+
+<body>
+    <h2 class="blueelement">EXAMPLES OF CSS SELECTORS ALL THREE TYPES</h2>
+    <p class="blueelement blackbg">
+        This is just an example of CSS class selector.
+    </p>
+    <p id="yellowbg">
+        This is example of CSS id selector.
+    </p>
+    <p id="yellowbg" class="blackbg">
+        This is example of CSS id selector and class selector both.
+    </p>
+    <p>
+        This is example of CSS element selector.
+    </p>
+    <spam>this is example of grouping selectors</spam>
+    <footer>it is footer</footer>
+
+</body>
+
+</html>

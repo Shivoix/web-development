@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Transform Property in CSS</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+      .container {
+        background-color: seagreen;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 80vh;
+      }
+      .box {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 200px;
+        width: 200px;
+        background-color: salmon;
+        border: 2px solid black;
+        transition: all 1s ease-out 0.1s;
+      }
+      .box:hover{
+          background-color: sienna ;
+          cursor: pointer;
+          /* The transform property applies a 2D or 3D transformation to an element. This property allows you to rotate, scale, move, skew, etc., elements. */
+          /* transform: rotate(360deg); */
+          /* transform: skew(40deg); */
+          /* transform: scale(4); */
+          /* transform: translateX(200px); */
+          /* transform: translateY(200px); */
+          /* transform: translateY(200px); */
+
+        border-radius: 22px;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>TRANSFORM PROPERTY IN CSS</h2>
+    <div class="container">
+      <div class="box"><strong>BOX</strong></div>
+    </div>
+  </body>
+</html>
