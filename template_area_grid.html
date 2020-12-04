@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Creating Layout Using Grid Templates Area</title>
+    <style>
+      .container {
+        display: grid;
+        grid-gap: 1rem;
+        grid-template-areas:         /* The grid-template-areas property specifies areas within the grid layout. */
+          "navbar navbar navbar navbar navbar" /* step-2 then reference to the name in the grid-template-areas property. */
+          "section section section section aside"
+          "footer footer footer footer footer";
+      }
+
+      .item {
+        border: 2px solid red;
+        background-color: salmon;
+      }
+
+      .center { 
+        display: block;
+        margin: auto;
+        width: 20%;
+      }
+
+      #navbar {
+        grid-area: navbar; /* step-1 You can name grid items by using the grid-area property*/
+      }
+
+      #sectin {
+        grid-area: section; /*You can name grid items by using the grid-area property*/
+      }
+
+      #aside {
+        grid-area: aside; /*You can name grid items by using the grid-area property*/
+      }
+
+      footer {
+        grid-area: footer; /*You can name grid items by using the grid-area property*/
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div id="navbar" class="item">
+        <h2 class="center">NAVBAR</h2>
+        Home About US Contact US
+      </div>
+      <div id="scetion" class="item">
+        <h2 class="center">SECTION</h2>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum illo
+        exercitationem voluptate eum tenetur minus illum, laudantium vitae at
+        ipsa. Illo, odit Lorem ipsum dolor sit amet consectetur adipisicing
+        elit. Error, iusto ratione. Consequuntur dolor vitae nulla, eos
+        reprehenderit harum officiis est voluptatum sit velit eligendi adipisci
+        recusandae aliquam voluptates vel. Repellat dolore deserunt, aperiam
+        temporibus optio quaerat odit suscipit, placeat dolores, nulla modi
+        obcaecati. Voluptates eius necessitatibus, accusantium maiores
+        dignissimos reprehenderit pariatur aspernatur quaerat consectetur
+        perspiciatis! Dolores dolor velit soluta adipisci. Possimus architecto
+        consectetur autem reiciendis et commodi voluptatibus quo, nam adipisci.
+        Qui ipsa exercitationem, culpa sapiente voluptas, repellat quaerat
+        aspernatur dignissimos veniam inventore pariatur voluptatibus sint omnis
+        illum deleniti in ullam! Quaerat itaque explicabo quasi aspernatur quam
+        iure, autem amet?
+      </div>
+      <div id="aside" class="item">
+        <h2 class="center">ASIDE</h2>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur
+        recusandae nihil distinctio suscipit porro mollitia pariatur blanditiis
+        perferendis deserunt accusantium?Lorem ipsum dolor sit amet, consectetur
+        adipisicing elit. Voluptatibus, alias maiores ex veniam possimus quis
+        dolores id repellendus cumque hic nisi voluptatem tempore odit deleniti,
+        laudantium quibusdam laboriosam, vel accusamus similique fuga atque.
+        Atque repellendus ipsa corrupti id. Nisi labore pariatur suscipit.
+        Molestiae officia eum itaque enim nam! Similique minus expedita vitae
+        magnam architecto modi dolorem quas blanditiis consequuntur. In placeat
+        quasi incidunt sed, ea, iste debitis quidem harum a laborum nulla optio
+        magni amet inventore cupiditate. Inventore nesciunt magnam expedita
+        praesentium tempore est consectetur excepturi eius, quod vero at ad
+        similique odit possimus corrupti illo officia amet dolore distinctio.
+      </div>
+      <footer class="item">
+        <h2 class="center">FOOTER</h2>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Modi optio
+        placeat iste.
+      </footer>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Spanning Multiple Rows And Columns in CSS Grid</title>
+    <style>
+      .container {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+        grid-gap: 1rem;
+        /* another way to give grid gap individually to rows and columns is below:-  */
+        /* grid-column-gap:7rem; */
+        /* grid-row-gap: 1rem; */
+      }
+      .box {
+        border: 2px solid red;
+        background-color: violet;
+        padding: 23px;
+      }
+      /* here we now spanning the 1st item of box  */
+      .box:first-child {
+        grid-column-start: 1; /* Specifies on which column to start displaying the item. */
+        grid-column-end: 4; /*Specifies on which column-line to stop displaying the item, or how many columns to span.*/
+        grid-row-start: 1; /*Specifies on which row to start displaying the item.*/
+        grid-row-end: 4; /*Specifies on which row-line to stop displaying the item, or how many rows to span.*/
+
+        /* shorthand method */
+        /* grid-column: 1 / span 3; */
+        /* grid-row: 1 / span 4; */
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="box">item-1</div>
+      <div class="box">item-2</div>
+      <div class="box">item-3</div>
+      <div class="box">item-4</div>
+      <div class="box">item-5</div>
+      <div class="box">item-6</div>
+      <div class="box">item-7</div>
+      <div class="box">item-8</div>
+      <div class="box">item-8</div>
+      <div class="box">item-8</div>
+      <div class="box">item-8</div>
+      <div class="box">item-8</div>
+      <div class="box">item-8</div>
+      <div class="box">item-8</div>
+      <div class="box">item-8</div>
+    </div>
+  </body>
+</html>

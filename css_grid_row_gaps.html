@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Creating Row And Gaps in CSS Grid</title>
+    <style>
+      .grid {
+        display: grid;
+        grid-template-rows: 1fr 1fr 4fr;   
+        grid-auto-rows: 3fr;      
+        grid-template-columns: 1fr 4fr 2fr;
+        grid-gap: 1rem;    /*to make space between all items (rows and columns)*/
+      }
+      .box {
+        border: 2px solid red;
+        background-color: black;
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="grid">
+      <div class="box">this is a box-1</div>
+      <div class="box">this is a box-2</div>
+      <div class="box">this is a box-3</div>
+      <div class="box">this is a box-4</div>
+      <div class="box">this is a box-5</div>
+      <div class="box">this is a box-6</div>
+      <div class="box">this is a box-7</div>
+      <div class="box">this is a box-8</div>
+      <div class="box">this is a box-9</div>
+      <div class="box">this is a box-10</div>
+    </div>
+  </body>
+</html>
